@@ -4,7 +4,7 @@ body {
 }
 .main {
     background: #1a1a1a;
-    padding: 0 1em 0 1em;
+    padding: 0 1em;
 }
 /* Sección del Portafolio */
 
@@ -18,7 +18,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-style: normal;    
     font-size: 20px;
-    position: absolute;
+    position: relative;
     p{
         margin: 0px;
     }
@@ -54,7 +54,7 @@ body {
 }
 
 .portfolio__description2 {
-    width: 693px;
+    
     color: #F7F7F5; 
     font-family: "Roboto", sans-serif;
     font-style: normal;    
@@ -109,6 +109,10 @@ body {
     font-size: 1rem;
     color: #cccccc;
     padding: 0 1rem 1rem;
+}
+.fasty__img {
+    position: relative;
+    right: 0;
 }
 
 /* Responsividad */
