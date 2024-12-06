@@ -16,7 +16,7 @@ body {
     color: #ffffff;
     height: 44px;
     font-family: "Roboto", sans-serif;
-    font-style: normal;    
+    font-style: italic;    
     font-size: 20px;
     position: relative;
     p{
@@ -35,7 +35,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0 0 1em 0;
-    color: #ffffff;
+    color:#50FF6C;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     text-align: center;
@@ -66,7 +66,13 @@ body {
 }
 
     
-    
+.design__tittle {
+    color: #50FF6C;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;    
+    padding: 70px;
+}
 
 
 .portfolio__items {
@@ -110,25 +116,104 @@ body {
     color: #cccccc;
     padding: 0 1rem 1rem;
 }
+
+.designuxui__tittle {
+    color: #50FF6C;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    padding: 70px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;    
+    font-size: 40px;
+    
+}
 .fasty-container{
     width: 100%;
     display: flex;
-
+    .fasty__tittle{
+    font-size: 50px;
+    color: #50FF6C;
+    }
     .fasty-desc{
         width: 60%;
         color: #FFFFFF;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;    
+        font-size: 30px;
+
     }
     .fasty__img {
     position: relative;
     right: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    
 }
 }
-   
+.fasty__img:hover {
+    transform: translateY(-10px);
+}
+.securesteps__container{
 
-/* Responsividad */
+    width: 100%;
+    display: flex;
+    .securesteps__tittle{
+        font-size: 50px;
+    }
+    .securesteps__tittle {
+        margin: 60px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;    
+        font-size: 50px;
+        color: #50FF6C;
+    }
+    .securesteps__desc {
+        margin: 60px;
+        width: 60%;
+        color: #FFFFFF;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;    
+        font-size: 30px;
+
+
+    }
+    .securesteps__img {
+    position: relative;
+    left: 0;
+    max-width: 400px;
+    max-height: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+    .securesteps__img:hover {
+        transform: translateY(-10px);
+    }
+}
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px; 
+    font-family: Roboto, sans-serif; 
+    font-size: 14px; 
+   
+  }
+  
+  footer a {
+    color: #007BFF; 
+    text-decoration: none; 
+  }
+  
+  footer a:hover {
+    text-decoration: underline; 
+  }
+
+/* valores responsive */
 @media (max-width: 768px) {
     .portfolio__items {
         grid-template-columns: 1fr;
