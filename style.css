@@ -110,10 +110,23 @@ body {
     color: #cccccc;
     padding: 0 1rem 1rem;
 }
-.fasty__img {
+.fasty-container{
+    width: 100%;
+    display: flex;
+
+    .fasty-desc{
+        width: 60%;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fasty__img {
     position: relative;
     right: 0;
 }
+}
+   
 
 /* Responsividad */
 @media (max-width: 768px) {
