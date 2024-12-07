@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    background-color: #1a1a1a;
 
 }
 .main {
@@ -29,6 +30,7 @@ body {
 .portfolio {
     padding-top: 1.8em;
     text-align: center;
+    background-color: #1a1a1a;
    
     
 }
@@ -197,7 +199,6 @@ body {
 
     }
     .securesteps__tittle {
-        display: flex;
         margin: 60px;
         font-family: "Roboto", sans-serif;
         font-style: normal;    
