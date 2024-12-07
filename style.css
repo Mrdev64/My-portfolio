@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
 
@@ -13,15 +18,13 @@ body {
     display: flex;
     justify-content: end;
     width: 100%;
-    color: #ffffff;
+    color: #adadad;
     height: 44px;
     font-family: "Roboto", sans-serif;
     font-style: italic;    
     font-size: 20px;
     position: relative;
-    p{
-        margin: 0px;
-    }
+    
 }
 .portfolio {
     padding-top: 1.8em;
@@ -65,7 +68,31 @@ body {
 
 }
 
-    
+.porfolio__perfilpro--tittle {
+    color: #50FF6C;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;    
+    padding: 70px;
+}
+.formacion__tittle {
+    color: #50FF6C;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;    
+    padding: 70px;
+}
+
+.formaciondesc__1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;    
+    padding: 70px;
+}
+
+
+
 .design__tittle {
     color: #50FF6C;
     font-size: 40px;
@@ -130,9 +157,13 @@ body {
 .fasty-container{
     width: 100%;
     display: flex;
-    .fasty__tittle{
-    font-size: 50px;
-    color: #50FF6C;
+    
+
+    }
+
+    .fasty__tittle {
+        font-size: 50px;
+        color: #50FF6C;
     }
     .fasty-desc{
         width: 60%;
@@ -150,50 +181,59 @@ body {
     right: 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 30px;
-    
+    max-width: 100%; 
+    height: auto;    
+    display: block;
 }
-}
+
 .fasty__img:hover {
     transform: translateY(-10px);
 }
 .securesteps__container{
 
-    width: 100%;
     display: flex;
-    .securesteps__tittle{
-        font-size: 50px;
+    align-items: center; 
+    margin: 20px 0;
+
     }
     .securesteps__tittle {
+        display: flex;
         margin: 60px;
         font-family: "Roboto", sans-serif;
         font-style: normal;    
         font-size: 50px;
         color: #50FF6C;
+       
+        
     }
     .securesteps__desc {
-        margin: 60px;
         width: 60%;
         color: #FFFFFF;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         font-family: "Roboto", sans-serif;
         font-style: normal;    
         font-size: 30px;
+        margin: 40px;
 
 
     }
     .securesteps__img {
+    width: 50%;
     position: relative;
+    display: flex;
     left: 0;
-    max-width: 400px;
-    max-height: 800px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
+    max-width: 100%; 
+    
+    
 }
     .securesteps__img:hover {
         transform: translateY(-10px);
     }
-}
+
 footer {
     background-color: #1a1a1a;
     color: #ffffff; 
@@ -205,7 +245,7 @@ footer {
   }
   
   footer a {
-    color: #007BFF; 
+    color: #50FF6C; 
     text-decoration: none; 
   }
   
@@ -217,6 +257,21 @@ footer {
 @media (max-width: 768px) {
     .portfolio__items {
         grid-template-columns: 1fr;
+    }
+     
+
+    }
+
+
+@media (max-width: 1024px) {
+    .portfolio__title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio__description2 {
+        font-size: 14px;
     }
 }
 
