@@ -1,280 +1,256 @@
-* {
-    box-sizing: border-box;
+/* Variables de colores */
+:root {
+    --color-primario: #50FF6C; /* Azul para enlaces y acentos */
+    --color-secundario: #121212; /* Gris claro para fondos */
+    --color-texto: #ffffff; /* Texto general */
+    --color-borde: #ddd; /* Bordes de elementos */
 }
 
-
+/* General */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #1a1a1a;
-
-}
-.main {
-    background: #1a1a1a;
-    padding: 0 1em;
-}
-/* Sección del Portafolio */
-
-.mi__nombre {
+    padding: 0;
     box-sizing: border-box;
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    color: #adadad;
-    height: 44px;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;    
-    font-size: 20px;
-    position: relative;
-    
-}
-.portfolio {
-    padding-top: 1.8em;
-    text-align: center;
-    background-color: #1a1a1a;
-   
-    
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
 }
 
+main {
+    padding: 20px;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* Header / Title */
 .portfolio__title {
-
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 0 0 1em 0;
-    color:#50FF6C;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-size: 2rem;
     text-align: center;
+    margin-bottom: 10px;
+    color: var(--color-primario);
 }
 
 .portfolio__description {
-    width: 60px;
-    height: 52px;
-    font-size: 35px;
-    color: #cccccc;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%; /* 51.7px */
-    letter-spacing: 0.376px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--color-texto);
 }
 
 .portfolio__description2 {
-    
-    color: #F7F7F5; 
-    font-family: "Roboto", sans-serif;
-    font-style: normal;    
-    font-size: 20px;
-    line-height: 132%;
-    letter-spacing: 0.357px;
-    text-align: left;
-
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
 }
 
-.porfolio__perfilpro--tittle {
-    color: #50FF6C;
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;    
-    padding: 70px;
+
+/* Aplicativos que manejo */
+.port__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+   
+    margin-bottom: 30px;
 }
+
+.port__icons img {
+    width: 60px;
+    height: 60px;
+   
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.port__icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Formación */
+.formacion {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .formacion__tittle {
-    color: #50FF6C;
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;    
-    padding: 70px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-primario);
 }
 
-.formaciondesc__1 {
-    color: #ffffff;
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;    
-    padding: 70px;
-}
-
-
-
-.design__tittle {
-    color: #50FF6C;
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;    
-    padding: 70px;
-}
-
-
+/* Diseños de marca */
 .portfolio__items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500; /* Semibold */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .portfolio__item {
-    background-color: #2a2a2a;
-    border: 1px solid #333;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 30px;
+    text-align: center;
+    border: 1px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #1e1b1b;
+    transition: box-shadow 0.3s ease;
 }
-
 .portfolio__item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 
 }
 
+
 .portfolio__image {
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 5px;
 }
 
-.portfolio__item-title {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem;
-    color: #50FF6C;
-}
 
-.portfolio__item-description {
-    font-size: 1rem;
-    color: #cccccc;
-    padding: 0 1rem 1rem;
-}
 
-.designuxui__tittle {
-    color: #50FF6C;
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem;
-    padding: 70px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;    
-    font-size: 40px;
-    
-}
-.fasty-container{
-    width: 100%;
+
+/* Contenedor Fasty */
+.fasty-container {
     display: flex;
-    
-
-    }
-
-    .fasty__tittle {
-        font-size: 50px;
-        color: #50FF6C;
-    }
-    .fasty-desc{
-        width: 60%;
-        color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: "Roboto", sans-serif;
-        font-style: normal;    
-        font-size: 30px;
-
-    }
-    .fasty__img {
-    position: relative;
-    right: 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 30px;
-    max-width: 100%; 
-    height: auto;    
-    display: block;
+    flex-direction: row; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
+/* Imagen Fasty */
+.fasty__img {
+    max-width: 50%; 
+    height: auto;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+/* Descripción Fasty */
+.fasty-desc {
+    flex: 1; 
+    text-align: left;
+}
 .fasty__img:hover {
     transform: translateY(-10px);
 }
-.securesteps__container{
 
+/* Contenedor SecureSteps */
+.securesteps__container {
     display: flex;
-    align-items: center; 
-    margin: 20px 0;
-
-    }
-    .securesteps__tittle {
-        margin: 60px;
-        font-family: "Roboto", sans-serif;
-        font-style: normal;    
-        font-size: 50px;
-        color: #50FF6C;
-       
-        
-    }
-    .securesteps__desc {
-        width: 60%;
-        color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: "Roboto", sans-serif;
-        font-style: normal;    
-        font-size: 30px;
-        margin: 40px;
-
-
-    }
-    .securesteps__img {
-    width: 50%;
-    position: relative;
-    display: flex;
-    left: 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    max-width: 100%; 
-    
-    
+    flex-direction: row; 
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
 }
-    .securesteps__img:hover {
-        transform: translateY(-10px);
-    }
 
-footer {
-    background-color: #1a1a1a;
-    color: #ffffff; 
-    text-align: center; 
-    padding: 20px; 
-    font-family: Roboto, sans-serif; 
-    font-size: 14px; 
-   
-  }
-  
-  footer a {
-    color: #50FF6C; 
-    text-decoration: none; 
-  }
-  
-  footer a:hover {
-    text-decoration: underline; 
-  }
+/* Imagen SecureSteps */
+.securesteps__img {
+    max-width: 50%; 
+    height: auto;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
 
-/* valores responsive */
+.securesteps__img:hover{
+    transform: translateY(-10px);
+}
+
+/* Descripción SecureSteps */
+.securesteps__desc {
+    flex: 1; 
+    text-align: left;
+}
+
+/* Títulos de los contenedores */
+.fasty__tittle, .securesteps__tittle {
+    font-size: 50px;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.fasty-desc p, .securesteps__desc p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-texto);
+}
+
+/* Diseño responsivo */
 @media (max-width: 768px) {
-    .portfolio__items {
-        grid-template-columns: 1fr;
-    }
-     
-
-    }
 
 
-@media (max-width: 1024px) {
+
     .portfolio__title {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .portfolio__description {
+        font-size: 1rem;
+    }
+
+    .formacion__tittle, .design__tittle, .designuxui__tittle {
+        font-size: 1.2rem;
+    }
+
+
+    .portfolio__items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /* Contenedor Fasty y SecureSteps en columna */
+    .fasty-container, .securesteps__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Reubicación del título SecureSteps */
+    .securesteps__desc {
+        order: -1; 
+    text-align: center;
+    flex: 1;
+    }
+
+    /* Asegurar que el título SecureSteps esté arriba */
+    .securesteps__tittle {
+        order: -1;
+        margin-bottom: 5px;
+    }
+
+    /* Imágenes responsivas */
+    .fasty__img, .securesteps__img {
+        max-width: 100%; /* La imagen ocupa el ancho completo */
+    }
+
+    /* Descripciones */
+    .fasty-desc, .securesteps__desc {
+        margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+    }
+    /* Responsive del titulo */
+    .fasty__tittle, .securesteps__tittle{
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 480px) {
-    .portfolio__description2 {
-        font-size: 14px;
-    }
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--color-secundario);
+    margin-top: 20px;
+    color: var(--color-texto);
 }
 
+footer a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
 
-
+footer a:hover {
+    text-decoration: underline;
+}
